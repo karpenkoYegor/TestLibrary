@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibrary", "TestLibrary\TestLibrary.csproj", "{4870FAE1-9871-42F9-92AC-E427282FA2AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLibrary", "TestLibrary\TestLibrary.csproj", "{4870FAE1-9871-42F9-92AC-E427282FA2AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibrary.Tests", "TestLibrary.Tests\TestLibrary.Tests.csproj", "{418E48A2-152B-4CEC-A730-0DCE7E268B3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLibrary.Tests", "TestLibrary.Tests\TestLibrary.Tests.csproj", "{418E48A2-152B-4CEC-A730-0DCE7E268B3B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4870FAE1-9871-42F9-92AC-E427282FA2AB} = {4870FAE1-9871-42F9-92AC-E427282FA2AB}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Задание 3", "Задание 3", "{44C45ED8-A398-4937-B1A7-E351B0C0E3CF}"
+	ProjectSection(SolutionItems) = preProject
+		query.txt = query.txt
 	EndProjectSection
 EndProject
 Global
