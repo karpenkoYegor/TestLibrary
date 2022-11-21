@@ -34,10 +34,10 @@ namespace TestLibrary
             FirstSide = firstSide;
             SecondSide = secondSide;
             ThirdSide = thirdSide;
-            _isTriangle = FirstSide + SecondSide <= ThirdSide ||
+            _isTriangle = !(FirstSide + SecondSide <= ThirdSide ||
                           ThirdSide + SecondSide <= FirstSide ||
-                          FirstSide + ThirdSide <= SecondSide;
-            if(_isTriangle)
+                          FirstSide + ThirdSide <= SecondSide);
+            if(!_isTriangle)
                 Console.WriteLine("Такого треугольника не существует");
         }
 
@@ -54,7 +54,7 @@ namespace TestLibrary
             {
                 Console.WriteLine("Треугольник прямоугольный");
             }
-            if (!_isTriangle)
+            if (_isTriangle)
             {
                 var halfPerimetr = Perimetr() / 2;
                 return Math.Sqrt(halfPerimetr * (halfPerimetr - FirstSide) * (halfPerimetr - SecondSide) * (halfPerimetr - ThirdSide));
